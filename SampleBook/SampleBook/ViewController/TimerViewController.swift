@@ -20,12 +20,15 @@ class TimerViewController: UIViewController {
     }
     
     @IBAction func tenSecButtonAction(_ sender: Any) {
+        timer?.invalidate()
         start(sec: 10)
     }
     @IBAction func oneMinButtonAction(_ sender: Any) {
+        timer?.invalidate()
         start(sec: 60)
     }
     @IBAction func threeMinButtonAction(_ sender: Any) {
+        timer?.invalidate()
         start(sec: 180)
     }
     @IBAction func stopButtonAction(_ sender: Any) {
