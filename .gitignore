@@ -1,0 +1,15 @@
+# storyboardなどの変更（拡大・縮小・位置など）によって変更が加わるファイル 
+UserInterfaceState.xcuserstate
+
+# ブレークポイントを変更したときに変更が加わるファイル
+xcdebugger
+
+# User settings
+#xcuserdata/
+
+# CocoaPods
+Pods/
+*.xcworkspace
+
+# for Mac
+.DS_Store
