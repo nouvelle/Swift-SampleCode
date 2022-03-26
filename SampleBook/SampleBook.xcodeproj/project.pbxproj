@@ -12,9 +12,9 @@
 		E30E358627EF89470064E837 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E30E358427EF89470064E837 /* Main.storyboard */; };
 		E30E358827EF89490064E837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30E358727EF89490064E837 /* Assets.xcassets */; };
 		E30E358B27EF894A0064E837 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E30E358927EF894A0064E837 /* LaunchScreen.storyboard */; };
-		E30E359827EF8CA10064E837 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30E359727EF8CA10064E837 /* MapViewController.swift */; };
 		E30E359A27EF8CCE0064E837 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30E359927EF8CCE0064E837 /* AlbumViewController.swift */; };
 		E379888527EF8E820010CE24 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379888427EF8E820010CE24 /* TimerViewController.swift */; };
+		E37A088427EF944600515E4F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37A088327EF944600515E4F /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +25,9 @@
 		E30E358727EF89490064E837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E30E358A27EF894A0064E837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E30E358C27EF894A0064E837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E30E359727EF8CA10064E837 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		E30E359927EF8CCE0064E837 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		E379888427EF8E820010CE24 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		E37A088327EF944600515E4F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				E379888427EF8E820010CE24 /* TimerViewController.swift */,
-				E30E359727EF8CA10064E837 /* MapViewController.swift */,
 				E30E359927EF8CCE0064E837 /* AlbumViewController.swift */,
+				E37A088327EF944600515E4F /* MapViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -153,8 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E30E359A27EF8CCE0064E837 /* AlbumViewController.swift in Sources */,
+				E37A088427EF944600515E4F /* MapViewController.swift in Sources */,
 				E30E357F27EF89470064E837 /* AppDelegate.swift in Sources */,
-				E30E359827EF8CA10064E837 /* MapViewController.swift in Sources */,
 				E379888527EF8E820010CE24 /* TimerViewController.swift in Sources */,
 				E30E358127EF89470064E837 /* SceneDelegate.swift in Sources */,
 			);
@@ -233,7 +233,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -288,7 +288,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -308,6 +308,7 @@
 				DEVELOPMENT_TEAM = 766YD97TM2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleBook/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "現在地周辺のマップを表示する機能に使います。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -336,6 +337,7 @@
 				DEVELOPMENT_TEAM = 766YD97TM2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleBook/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "現在地周辺のマップを表示する機能に使います。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
