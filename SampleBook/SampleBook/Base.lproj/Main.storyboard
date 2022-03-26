@@ -66,22 +66,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDL-bS-Xay">
-                                <rect key="frame" x="166" y="269" width="44" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDL-bS-Xay">
+                                <rect key="frame" x="0.0" y="100" width="375" height="45.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MpN-Xv-iu6">
+                                <rect key="frame" x="0.0" y="456" width="375" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvU-dO-8zh">
+                                        <rect key="frame" x="0.0" y="0.0" width="118.5" height="31"/>
+                                        <color key="tintColor" red="0.98431372549999996" green="0.43529411759999997" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="10秒"/>
+                                        <connections>
+                                            <action selector="tenSecButtonAction:" destination="SZf-93-CNg" eventType="touchUpInside" id="CkX-xN-hYD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIZ-7I-HvZ">
+                                        <rect key="frame" x="128.5" y="0.0" width="118" height="31"/>
+                                        <color key="tintColor" red="0.98431372549999996" green="0.43529411759999997" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="1分"/>
+                                        <connections>
+                                            <action selector="oneMinButtonAction:" destination="SZf-93-CNg" eventType="touchUpInside" id="P88-Ia-1Ao"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y30-ny-qko">
+                                        <rect key="frame" x="256.5" y="0.0" width="118.5" height="31"/>
+                                        <color key="tintColor" red="0.98431372549999996" green="0.43529411759999997" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="3分"/>
+                                        <connections>
+                                            <action selector="threeMinButtonAction:" destination="SZf-93-CNg" eventType="touchUpInside" id="KSN-d1-2Om"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOO-wE-R1O">
+                                <rect key="frame" x="100" y="537" width="175" height="31"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="STOP"/>
+                                <connections>
+                                    <action selector="stopButtonAction:" destination="SZf-93-CNg" eventType="touchUpInside" id="pQI-Xd-fIv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FOd-ra-5sY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eOO-wE-R1O" firstAttribute="leading" secondItem="FOd-ra-5sY" secondAttribute="leading" constant="100" id="B5l-Pj-96Z"/>
+                            <constraint firstItem="FOd-ra-5sY" firstAttribute="trailing" secondItem="eOO-wE-R1O" secondAttribute="trailing" constant="100" id="EKl-vQ-VOG"/>
+                            <constraint firstItem="aDL-bS-Xay" firstAttribute="leading" secondItem="FOd-ra-5sY" secondAttribute="leading" id="N2d-KW-Bgm"/>
+                            <constraint firstItem="MpN-Xv-iu6" firstAttribute="leading" secondItem="FOd-ra-5sY" secondAttribute="leading" id="P9l-QU-jts"/>
+                            <constraint firstItem="eOO-wE-R1O" firstAttribute="top" secondItem="MpN-Xv-iu6" secondAttribute="bottom" constant="50" id="XbI-Ds-q4V"/>
+                            <constraint firstItem="FOd-ra-5sY" firstAttribute="bottom" secondItem="eOO-wE-R1O" secondAttribute="bottom" constant="50" id="bwu-3v-geq"/>
+                            <constraint firstItem="aDL-bS-Xay" firstAttribute="top" secondItem="FOd-ra-5sY" secondAttribute="top" constant="100" id="klr-bn-lL8"/>
+                            <constraint firstItem="FOd-ra-5sY" firstAttribute="trailing" secondItem="MpN-Xv-iu6" secondAttribute="trailing" id="nLG-m2-eoA"/>
+                            <constraint firstItem="FOd-ra-5sY" firstAttribute="trailing" secondItem="aDL-bS-Xay" secondAttribute="trailing" id="thX-AX-tcb"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Timer" image="timer" catalog="system" id="fqc-mX-qEr"/>
+                    <connections>
+                        <outlet property="dispLabel" destination="aDL-bS-Xay" id="Qd2-w7-bJJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dmd-F0-sgY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-367" y="-1188"/>
+            <point key="canvasLocation" x="-367.19999999999999" y="-1188.7556221889056"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PNd-u7-zRV">
