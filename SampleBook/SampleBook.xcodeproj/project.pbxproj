@@ -13,6 +13,8 @@
 		E30E358827EF89490064E837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30E358727EF89490064E837 /* Assets.xcassets */; };
 		E30E358B27EF894A0064E837 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E30E358927EF894A0064E837 /* LaunchScreen.storyboard */; };
 		E30E359A27EF8CCE0064E837 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30E359927EF8CCE0064E837 /* AlbumViewController.swift */; };
+		E35B8E4B27F0174A002B869C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B8E4A27F0174A002B869C /* MenuViewController.swift */; };
+		E35B8E4D27F01F7B002B869C /* MenuDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35B8E4C27F01F7B002B869C /* MenuDetailViewController.swift */; };
 		E379888527EF8E820010CE24 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E379888427EF8E820010CE24 /* TimerViewController.swift */; };
 		E37A088427EF944600515E4F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37A088327EF944600515E4F /* MapViewController.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +28,8 @@
 		E30E358A27EF894A0064E837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E30E358C27EF894A0064E837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E30E359927EF8CCE0064E837 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		E35B8E4A27F0174A002B869C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		E35B8E4C27F01F7B002B869C /* MenuDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailViewController.swift; sourceTree = "<group>"; };
 		E379888427EF8E820010CE24 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		E37A088327EF944600515E4F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +81,8 @@
 				E379888427EF8E820010CE24 /* TimerViewController.swift */,
 				E30E359927EF8CCE0064E837 /* AlbumViewController.swift */,
 				E37A088327EF944600515E4F /* MapViewController.swift */,
+				E35B8E4A27F0174A002B869C /* MenuViewController.swift */,
+				E35B8E4C27F01F7B002B869C /* MenuDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -153,9 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E30E359A27EF8CCE0064E837 /* AlbumViewController.swift in Sources */,
+				E35B8E4B27F0174A002B869C /* MenuViewController.swift in Sources */,
 				E37A088427EF944600515E4F /* MapViewController.swift in Sources */,
 				E30E357F27EF89470064E837 /* AppDelegate.swift in Sources */,
 				E379888527EF8E820010CE24 /* TimerViewController.swift in Sources */,
+				E35B8E4D27F01F7B002B869C /* MenuDetailViewController.swift in Sources */,
 				E30E358127EF89470064E837 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
