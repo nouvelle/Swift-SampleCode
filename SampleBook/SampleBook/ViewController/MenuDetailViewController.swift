@@ -11,6 +11,7 @@ class MenuDetailViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var thumbnailImage: UIImageView!
     
     var info: Menu!
     
@@ -19,5 +20,6 @@ class MenuDetailViewController: UIViewController {
         navigationItem.title = info.name
         titleLabel.text = info.title
         descriptionLabel.text = info.description
+        thumbnailImage.image = UIImage(named: info.imgName)
     }
 }
